@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Negocio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(135deg, #020617, #1e3a8a);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 1.15em;
+      color: #c7d2fe;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #60a5fa;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      text-align: center;
+      border: 1px solid #1e293b;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #93c5fd;
+    }
+    .brands img {
+      max-width: 90px;
+      filter: grayscale(100%);
+      opacity: 0.9;
+    }
+    .brands img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    footer {
+      background-color: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+    .contact {
+      background-color: #020617;
+      border-radius: 18px;
+      padding: 35px;
+      border: 1px solid #1e293b;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 26px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Reparacel">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#38bdf8"/>
+            <stop offset="100%" stop-color="#2563eb"/>
+          </linearGradient>
+        </defs>
+        <rect x="5" y="5" rx="22" ry="22" width="100" height="100" fill="#020617" stroke="url(#g)" stroke-width="4"/>
+        <rect x="30" y="22" rx="6" ry="6" width="50" height="66" fill="none" stroke="url(#g)" stroke-width="4"/>
+        <circle cx="55" cy="78" r="3" fill="#60a5fa"/>
+      </svg>
+      <h1>Reparacel</h1>
+      <p>Venta, reparación y soluciones profesionales para tu celular</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      En <strong>Reparacel</strong> nos especializamos en la venta de celulares, accesorios y servicios técnicos
+      para dispositivos móviles. Brindamos atención honesta, rápida y profesional, ofreciendo soluciones
+      tanto de <strong>hardware</strong> como de <strong>software</strong> para que tu equipo funcione como nuevo.
+    </p>
+  </section>
+
+  <section>
+    <h2>Servicios especializados</h2>
+    <div class="services">
+      <div class="card">
+        <h3>🔧 Cambio de pantalla</h3>
+        <p>Reemplazo profesional de pantallas dañadas o rotas.</p>
+      </div>
+      <div class="card">
+        <h3>🔓 Desbloqueos</h3>
+        <p>Liberación y desbloqueo de equipos de forma segura.</p>
+      </div>
+      <div class="card">
+        <h3>🔌 Centro de carga</h3>
+        <p>Reparación o cambio de centros de carga dañados.</p>
+      </div>
+      <div class="card">
+        <h3>🔋 Cambio de batería</h3>
+        <p>Baterías nuevas para un mejor rendimiento.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Software y hardware</h3>
+        <p>Formateos, actualizaciones y soluciones técnicas.</p>
+      </div>
+      <div class="card">
+        <h3>🎧 Accesorios y recargas</h3>
+        <p>Fundas, cargadores, audífonos y recargas electrónicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Marcas que trabajamos</h2>
+    <div class="services brands">
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Motorola_logo.svg" alt="Motorola"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Xiaomi_logo.svg" alt="Xiaomi"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Huawei_Standard_logo.svg" alt="Huawei"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Oppo_Logo.svg" alt="Oppo"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Vivo_logo.svg" alt="Vivo"></div>
+      <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apple_logo_black.svg" alt="Apple"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <div class="contact">
+      <p><strong>📍 Dirección:</strong> Calle Cadereyta, La Piedad, El Marqués, Querétaro</p>
+      <p><strong>📞 Teléfono / WhatsApp:</strong> 442 184 0096</p>
+      <p><strong>⏰ Horario:</strong><br>
+        Lunes a Viernes: 10:00 am – 7:00 pm<br>
+        Sábados: 10:00 am – 4:00 pm<br>
+        Domingo: Sin servicio
+      </p>
+      <a class="btn" href="https://wa.me/524421840096" target="_blank">💬 Cotiza sin compromiso por WhatsApp</a>
+      <div style="margin-top:24px;overflow:hidden;border-radius:16px;border:1px solid #1e293b;">
+        <iframe
+          title="Mapa Reparacel"
+          src="https://www.google.com/maps?q=Calle%20Cadereyta%20La%20Piedad%20El%20Marqu%C3%A9s%20Quer%C3%A9taro&output=embed"
+          width="100%" height="320" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Promociones</h2>
+    <div class="services">
+      <div class="card">
+        <h3>🔋 Batería con descuento</h3>
+        <p>Pregunta por nuestras promociones en cambio de batería.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Pantalla a mejor precio</h3>
+        <p>Cotiza tu cambio de pantalla sin compromiso.</p>
+      </div>
+      <div class="card">
+        <h3>🎧 Accesorios</h3>
+        <p>Paquetes especiales en fundas, micas y cargadores.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Nombre de tu negocio · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
